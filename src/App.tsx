@@ -1,14 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ContextsProvider from "./providers/context";
 
 function App() {
   return (
     <div className="App">
-      <>
-      </>
-      <>
-      </>
+      <ContextsProvider>
+
+      </ContextsProvider>
     </div>
   );
 }
