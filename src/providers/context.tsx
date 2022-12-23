@@ -10,7 +10,7 @@ const ContextsProvider = ({children}: IProvider) =>{
 
     return(
         <Contexts.Provider value={{}}>
-          {}
+          {children}
         </Contexts.Provider>
         )
 }
