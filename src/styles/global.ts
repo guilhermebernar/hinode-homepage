@@ -64,6 +64,7 @@ a:-webkit-any-link {
 	--grey-fourth:#E1DCD5;
 	--grey-fifth:rgba(247, 247, 247, 0.5);
 	--grey-sixth:#333333;
+  --beige: #D5B69A;
 	--orange:#F2994A;
 	--yellow-dark:#AA8232;
 	--blue-ligth:#009BAA;

@@ -1,0 +1,33 @@
+.swiper{
+  width: 100%;
+}
+
+.swiper-slide {
+  display:flex;
+  justify-content: center;
+  width: 100vh;
+}
+
+.swiper-pagination-bullet {
+  width: 10.5px;
+  height: 10.5px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1.5px solid #FFFFFF;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--white);
+  border-color: var(--white);
+  width: 22.5px;
+  height: 12px;
+  border-radius: 10px;
+}
+
+
+.swiper-button-prev {
+  color: var(--white);
+}
+
+.swiper-button-next {
+  color: var(--white);
+}
