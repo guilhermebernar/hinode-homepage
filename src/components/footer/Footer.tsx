@@ -1,13 +1,15 @@
 import Infos from "./Footer.Infos"
 import Mailer from "./Footer.Mailer"
+import { FooterContainer, Footerdiv } from "./Footer.style"
 
 const Footer = ()=>{
 
     return(
-        <footer>
+        <FooterContainer>
+            <Footerdiv>FOOTER</Footerdiv>
             <Mailer/>
             <Infos/>
-        </footer>
+        </FooterContainer>
     )
 }
 

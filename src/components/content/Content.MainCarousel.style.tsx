@@ -5,6 +5,7 @@ display: flex;
 width: 100%;
 height: 770px;
 background-color: var(--beige);
+
 `
 
 export const CarouselDiv = styled.div`

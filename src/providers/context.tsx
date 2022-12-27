@@ -1,5 +1,7 @@
 import { createContext, ReactNode } from "react";
-import { SwiperProps } from "swiper/react"
+import { SwiperProps } from "swiper/react";
+import products from "./api";
+import { IProduct } from "./types";
 
 interface IProvider {
   children: ReactNode;
@@ -8,19 +10,41 @@ interface IProvider {
 export const Contexts = createContext({});
 
 const ContextsProvider = ({ children }: IProvider) => {
+  const productsApi:IProduct[] = products;
 
-  const MainCrouselSettings:SwiperProps = {
+  const productsBestSale:IProduct[] = productsApi.filter((item) => item.id >= 2 && item.id < 6).concat(productsApi.filter((item) => item.id >= 2 && item.id < 6));
+  
+  const MainCarouselSettings: SwiperProps = {
     spaceBetween: 0,
     slidesPerView: 1,
     navigation: true,
     pagination: {
-      clickable:true
-    }
-  }
+      clickable: true,
+    },
+  };
 
-  return <Contexts.Provider value={{
-    MainCrouselSettings
-  }}>{children}</Contexts.Provider>;
+  const CardsCarouselSettings: SwiperProps = {
+    spaceBetween: -100,
+    slidesPerView: 4,
+    navigation: true,
+    pagination: {
+      clickable: true,
+    },
+    
+  };
+
+  return (
+    <Contexts.Provider
+      value={{
+        MainCarouselSettings,
+        CardsCarouselSettings,
+        productsApi,
+        productsBestSale,
+      }}
+    >
+      {children}
+    </Contexts.Provider>
+  );
 };
 
 export default ContextsProvider;
