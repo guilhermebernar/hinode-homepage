@@ -8,6 +8,7 @@ flex-direction: column;
 position: relative;
 justify-content: center;
 align-items: center;
+margin-top: 30px;
 h2{
   font-family: var(--font-oswald);
   font-style: normal;
