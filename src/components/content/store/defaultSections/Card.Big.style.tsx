@@ -92,7 +92,7 @@ p{
 }
 `
 export const BigMarginToCards = styled.div`
-height: 1000px;
+height: 900px;
 
 .swiper{
   width: 100%;
