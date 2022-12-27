@@ -24,7 +24,7 @@ const ContextsProvider = ({ children }: IProvider) => {
   };
 
   const CardsCarouselSettings: SwiperProps = {
-    spaceBetween: -100,
+    spaceBetween: -70,
     slidesPerView: 4,
     navigation: true,
     pagination: {

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const MarginToCards = styled.div`
 
-
 .swiper{
   width: 100%;
 }
