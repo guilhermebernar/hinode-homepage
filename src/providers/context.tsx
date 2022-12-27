@@ -44,6 +44,10 @@ const ContextsProvider = ({ children }: IProvider) => {
     .filter((item) => item.id >= 28 && item.id < 32)
     .concat(productsApi.filter((item) => item.id >= 28 && item.id < 32));
 
+  const justproducts1: IProduct[] = productsApi
+  .filter((item) => item.id >= 32 && item.id < 36)
+  .concat(productsApi.filter((item) => item.id >= 32 && item.id < 36));
+
   const MainCarouselSettings: SwiperProps = {
     spaceBetween: 0,
     slidesPerView: 1,
@@ -82,6 +86,7 @@ const ContextsProvider = ({ children }: IProvider) => {
         bathproducts2,
         fragproducts1,
         fragproducts2,
+        justproducts1,
         CardsCarouselSettings,
         productsApi,
         productsBestSale,
