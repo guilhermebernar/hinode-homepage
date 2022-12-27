@@ -13,6 +13,8 @@ const ContextsProvider = ({ children }: IProvider) => {
   const productsApi:IProduct[] = products;
 
   const productsBestSale:IProduct[] = productsApi.filter((item) => item.id >= 2 && item.id < 6).concat(productsApi.filter((item) => item.id >= 2 && item.id < 6));
+
+  const bigproducts:IProduct[] = productsApi.filter((item) => item.id >= 6 && item.id < 8).concat(productsApi.filter((item) => item.id >= 6 && item.id < 8));  
   
   const MainCarouselSettings: SwiperProps = {
     spaceBetween: 0,
@@ -33,13 +35,25 @@ const ContextsProvider = ({ children }: IProvider) => {
     
   };
 
+  const BigCardsCarouselSettings: SwiperProps = {
+    spaceBetween: -50,
+    slidesPerView: 2,
+    navigation: true,
+    pagination: {
+      clickable: true,
+    },
+    
+  };
+
   return (
     <Contexts.Provider
       value={{
+        bigproducts,
         MainCarouselSettings,
         CardsCarouselSettings,
         productsApi,
         productsBestSale,
+        BigCardsCarouselSettings,
       }}
     >
       {children}

@@ -29,10 +29,10 @@ export const MarginToCards = styled.div`
 
 
 .swiper-button-prev {
-  color: #AA8232;
+  color: #BDBDBD;;
 }
 
 .swiper-button-next {
-  color: #AA8232;
+  color: #BDBDBD;;
 }
 `

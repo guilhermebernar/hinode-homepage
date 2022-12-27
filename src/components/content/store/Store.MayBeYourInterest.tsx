@@ -1,8 +1,13 @@
+import { useContext } from "react"
+import { Contexts } from "../../../providers/context"
+import BigCardCarousel from "./defaultSections/Card.Big.Carousel"
 import CardCategory from "./defaultSections/Card.Category"
 import SubTitleCategories from "./defaultSections/SubtitleCategorySection"
 import { CardsContainer, SectionCategory } from "./Store.MayBeYourInterest.style"
 
 const MayBeYourInterest = ()=>{
+
+  const { bigproducts }:any  = useContext(Contexts)
 
     return(
         <SectionCategory>
@@ -24,7 +29,8 @@ const MayBeYourInterest = ()=>{
               category={"CORPO E BANHO"} 
               imagem={"/assets/jpg/close-up-female-hands-apllying-hand-cream 1.jpg"}
             />
-          </CardsContainer> 
+          </CardsContainer>
+          <BigCardCarousel {...bigproducts}/>
         </SectionCategory>
     )
 }
