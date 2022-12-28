@@ -10,11 +10,9 @@ const Content = () => {
 
   return (
     <ContentMainSection>
-      <MainCarousel 
-        settings={MainCarouselSettings}
-      />
+      <MainCarousel settings={MainCarouselSettings} />
       <InformationBanner />
-      <Store/>
+      <Store />
     </ContentMainSection>
   );
 };

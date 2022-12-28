@@ -21,11 +21,17 @@ const InformationBanner = () => {
           <p>FRETE GRÁTIS nas compras acima de R$ 49,00 para todo o Brasil</p>
         </InfoDiv>
         <InfoDiv>
-          <img src={prime} alt="Icone representando troca, referência a hinode prime." />
+          <img
+            src={prime}
+            alt="Icone representando troca, referência a hinode prime."
+          />
           <p>Hinode Prime: Receba em casa todo mês com 20% OFF</p>
         </InfoDiv>
         <InfoDiv>
-          <img src={box} alt="Simbolo de caixa representando armazenamento ou economia, devido ao frete grátis." />
+          <img
+            src={box}
+            alt="Simbolo de caixa representando armazenamento ou economia, devido ao frete grátis."
+          />
           <p>Garanta mais economia com frete inteligente</p>
         </InfoDiv>
       </InfosMarginContainer>

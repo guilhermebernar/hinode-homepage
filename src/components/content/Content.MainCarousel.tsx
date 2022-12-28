@@ -16,7 +16,6 @@ import "swiper/css/pagination";
 import "../../styles/swiper.css";
 import { IMainCarousel } from "../../providers/types";
 
-
 const MainCarousel = ({ settings }: IMainCarousel) => {
   return (
     <CarouselContainer>

@@ -11,6 +11,7 @@ import {
   BigProductName,
   BigWholePrice,
 } from "./Card.Big.style";
+import Stars from "./Card.Stars";
 
 interface CardProps {
   card: IProduct;
@@ -31,7 +32,9 @@ const BigCard = ({ card }: CardProps) => {
         <BigContainerName>
           <BigProductName>{card.name}</BigProductName>
         </BigContainerName>
-        <div>Stars</div>
+        <div>
+          <Stars />
+        </div>
         <BigPriceTag>
           <BigWholePrice>{whole},</BigWholePrice>
           <BigFractionPrice>{fraction}</BigFractionPrice>

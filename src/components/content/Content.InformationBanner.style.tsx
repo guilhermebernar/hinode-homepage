@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InfoBannerContainer = styled.section`
 display: flex;
 justify-content: center;
-width: 1440px;
+width: 100%;
 margin-top: 20px;
 height: 117px;
 background-color: var(--grey-second);

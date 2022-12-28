@@ -47,8 +47,8 @@ const Footer = ()=>{
               </InfoDivs>
               <TelsDiv>
                   <button>CENTRAL DE ATENDIMENTO</button>
-                  <p>De segunda a sexta das 9h às 21h 
-                    Capitas e regiões metropolitanas 4020-2424 
+                  <p>De segunda a sexta das 9h às 21h <br />
+                    Capitas e regiões metropolitanas 4020-2424 <br /> 
                     Demais localidades: 0800-144-6633</p>
                   <IconsContainer>
                     <SocialMediaIcon src={instagram} alt="Icone de redirecionamento" />

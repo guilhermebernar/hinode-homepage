@@ -1,13 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/anchor-has-content */
-import { CategoriesButton, CategoriesContainerRigth, ContentBar } from "./Header.Categories.style";
+import {
+  CategoriesButton,
+  CategoriesContainerRigth,
+  ContentBar,
+} from "./Header.Categories.style";
 import menu from "../../assets/png/menu.png";
 import { HeadersMarginContainer } from "./Header.style";
 
 const HeaderCategories = () => {
   return (
     <ContentBar>
-     <HeadersMarginContainer>
+      <HeadersMarginContainer>
         <CategoriesButton>
           <img src={menu} alt="" />
           <p>Todas as categorias</p>

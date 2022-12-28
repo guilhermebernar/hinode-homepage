@@ -26,7 +26,6 @@ import person from "../../assets/icons/person.svg";
 import bag from "../../assets/icons/bolca.svg";
 import heart from "../../assets/icons/coracao.svg";
 
-
 const HeaderMain = () => {
   return (
     <MainBar>
@@ -56,9 +55,10 @@ const HeaderMain = () => {
             </VisitorsButton>
           </VisitorContainer>
           <FavoriteContainer href="#">
-            <FavoriteIcon 
-              src={heart} 
-              alt="Icone de coração representando área de favoritos." />
+            <FavoriteIcon
+              src={heart}
+              alt="Icone de coração representando área de favoritos."
+            />
             <FavoriteTxt>FAVORITOS</FavoriteTxt>
           </FavoriteContainer>
           <BagContainer href="#">
@@ -66,9 +66,9 @@ const HeaderMain = () => {
               <SpamNumberBuy>
                 <span>0</span>
               </SpamNumberBuy>
-              <img 
+              <img
                 src={bag}
-                alt="Icone de sacola representando a sacola de compras do cliente." 
+                alt="Icone de sacola representando a sacola de compras do cliente."
               />
             </div>
             <BagTxt>SACOLA</BagTxt>

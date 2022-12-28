@@ -96,7 +96,14 @@ export const TelsDiv = styled.div`
     display: flex;
     justify-content: end;
     margin-bottom: 34px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    color: #333333;
   }
+
   button{
     width: 221px;
     height: 48px;
@@ -126,6 +133,7 @@ width: 221px;
 display: flex;
 flex-direction: row;
 justify-content: end;
+
 `
 
 export const SocialMediaIcon = styled.img`

@@ -1,22 +1,18 @@
-import { useContext } from "react"
-import { Contexts } from "../../../providers/context"
-import CardCarousel from "./defaultSections/Card.Carousel"
-import SubTitleProducts from "./defaultSections/SubtitleProductSections"
-import { BestSellersContainer } from "./Store.BestSellers.style"
-// import { ICardCarousel } from "../../../providers/types";
+import { useContext } from "react";
+import { Contexts } from "../../../providers/context";
+import CardCarousel from "./defaultSections/Card.Carousel";
+import SubTitleProducts from "./defaultSections/SubtitleProductSections";
+import { BestSellersContainer } from "./Store.BestSellers.style";
 
+const BestSellers = () => {
+  const { productsBestSale }: any = useContext(Contexts);
 
+  return (
+    <BestSellersContainer>
+      <SubTitleProducts subtitle={"MAIS VENDIDOS"} />
+      <CardCarousel {...productsBestSale} />
+    </BestSellersContainer>
+  );
+};
 
-const BestSellers = () =>{
-
-  const {productsBestSale}:any  = useContext(Contexts)
-  
-    return(
-        <BestSellersContainer>
-          <SubTitleProducts subtitle={"MAIS VENDIDOS"}/>
-          <CardCarousel {...productsBestSale}/>
-        </BestSellersContainer>
-    )
-}
-
-export default BestSellers
+export default BestSellers;

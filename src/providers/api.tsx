@@ -1,5 +1,5 @@
 // import axios from 'axios';
-import { IProduct } from "./types"
+import { IProduct } from "./types";
 
 // const api = axios.create({
 //   baseURL: '',

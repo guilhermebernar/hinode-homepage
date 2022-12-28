@@ -5,6 +5,6 @@ width: 100%;
 background-color: var(--white);
 `
 export const ContentMainStore = styled.section`
-width: 1440px;
+width: 100%;
 background-color: var(--white);
 `
