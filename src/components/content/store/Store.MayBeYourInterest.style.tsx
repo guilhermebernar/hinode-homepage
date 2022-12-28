@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SectionCategory = styled.section`
-  width: 1420px;
+  width: 100%;
 `;
 
 export const CardsContainer = styled.div`
