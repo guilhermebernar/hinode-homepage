@@ -7,8 +7,10 @@ import {
   FavoriteIcon,
   FractionPrice,
   ImgBackgroud,
+  PreviusPricetag,
   PriceTag,
   ProductImg,
+  ProductInfos,
   ProductName,
   WholePrice,
 } from "./Card.style";
@@ -36,18 +38,18 @@ const Card = ({ card }: CardProps) => {
           alt="Coração para significar produto favorito"
         />
       </ImgBackgroud>
-      <div>
+      <ProductInfos>
         <ContainerName>
           <ProductName>{card.name}</ProductName>
         </ContainerName>
         <div>
           <Stars />
         </div>
-        {/* {card.previousPrice? (
-          
+        {card.previousPrice? (
+          <PreviusPricetag>{card.previousPrice}</PreviusPricetag>
         ) : (
-
-        )} */}
+          <></>
+        )}
         <PriceTag>
           <WholePrice>{whole},</WholePrice>
           <FractionPrice>{fraction}</FractionPrice>
@@ -55,7 +57,7 @@ const Card = ({ card }: CardProps) => {
         <BuyButton>
           <p>COMPRAR</p>
         </BuyButton>
-      </div>
+      </ProductInfos>
     </CardContainer>
   );
 };

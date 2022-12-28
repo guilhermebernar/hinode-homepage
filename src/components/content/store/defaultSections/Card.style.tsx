@@ -24,8 +24,27 @@ export const FavoriteIcon = styled.img`
 `;
 export const ContainerName = styled.div`
   max-width: 267px;
-  height: 50px;
+  max-height: 50px;
 `;
+
+export const PreviusPricetag = styled.div`
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  text-decoration-line: line-through;
+  color: #828282;
+`
+
+export const ProductInfos = styled.div`
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
+
 export const ProductName = styled.span`
   font-family: "Oswald";
   font-style: normal;
